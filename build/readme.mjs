@@ -18,6 +18,9 @@ for (let i = 0; i < CARDS.length; i += 2) {
 }
 
 const more = [
+  ['DashPro', 'wika-pms-showcase', 'Project monitoring for the EPCC Division of WIKA, a rebuild in progress with secure sign-in, projects and a formula engine', 'Next.js, PostgreSQL'],
+  ['Buff Your Money', 'agentbuff-bym-showcase', 'Personal and family finance that your AI agent fills in from a chat message, with no LLM inside the app', 'Next.js, PostgreSQL, MCP'],
+  ['Smart Home for AgentBuff', 'agentbuff-tuya-showcase', 'Control Tuya and Smart Life devices by chatting with your AI agent, plus an Apple Home style web app', 'Next.js, MCP'],
   ['Linky', 'Linky-Agentbuff', 'Open-source link shortener and link-in-bio pages with branded QR codes, click analytics, webhooks and a REST API', 'Next.js, Drizzle, PostgreSQL'],
   ['Absentra', 'Agentbuff-Absentra', 'Attendance for small businesses: GPS geofence and selfie clock-in, shifts, leave, payroll recap, and an MCP endpoint for agents', 'TypeScript, PostgreSQL, MCP'],
   ['AntiKebo', 'AgentBuff-AntiKebo', 'An alarm that keeps going until you are really awake, and asks your AI agent to keep nudging you', 'TypeScript, Rust, MCP'],

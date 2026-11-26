@@ -171,37 +171,37 @@ function coFounderCover(theme, box) {
 /** Featured work, in README order (two per row). */
 export const CARDS = [
   {
-    id: 'spead-ai', href: 'https://spead.ai', cover: 'cover-spead-ai.webp', status: RUNNING,
+    id: 'spead-ai', href: SHOWCASE('spead-ai-showcase'), cover: 'cover-spead-ai.webp', status: RUNNING,
     kicker: 'SPEAD AI · FOUNDER & LEAD AI ENGINEER', title: 'Spead AI',
     description: 'Multi-agent AI that runs inside your own infrastructure: cited document Q&A, a document studio and connectors, for government, BUMN and regulated companies.',
     facts: [{ value: '87%', label: 'faster reporting' }, { value: 'On-prem', label: 'or private cloud' }, { value: '2025', label: 'Google for Startups' }],
   },
   {
-    id: 'agentbuff', href: 'https://agentbuff.id', cover: 'cover-agentbuff.webp', status: RUNNING,
+    id: 'agentbuff', href: SHOWCASE('agentbuff-showcase'), cover: 'cover-agentbuff.webp', status: RUNNING,
     kicker: 'AGENTBUFF · CEO', title: 'AgentBuff',
     description: 'AI employees that work around the clock inside WhatsApp and Telegram for small businesses, with a marketplace of skills, connectors and business apps.',
     facts: [{ value: '57+', label: 'users' }, { value: '700+', label: 'tasks done' }, { value: '4.9/5', label: 'from 20 reviews' }],
   },
   {
-    id: 'spead-pro-wika', href: 'https://pro.spead.ai', cover: 'cover-spead-pro.webp', status: { label: 'Pilot', tone: 'green' },
+    id: 'spead-pro-wika', href: SHOWCASE('spead-pro-wika-showcase'), cover: 'cover-spead-pro.webp', status: { label: 'Pilot', tone: 'green' },
     kicker: 'WIKA EPCC · TENDER & LEGAL', title: 'Spead AI Pro',
     description: 'AI workspace for the tender and contract team: it fills the tender document review from a contract package and checks every quote against the source.',
     facts: [{ value: 'Cited', label: 'every quote verified' }, { value: 'PDF + Office', label: 'read with OCR' }, { value: 'SSO + 2FA', label: 'company sign-in' }],
   },
   {
-    id: 'hc-platform', href: 'https://hc.epccwika.tech', cover: 'cover-hc-platform.webp', status: LIVE,
+    id: 'hc-platform', href: SHOWCASE('wika-hc-platform-showcase'), cover: 'cover-hc-platform.webp', status: LIVE,
     kicker: 'WIKA EPCC · HUMAN CAPITAL', title: 'HC Platform',
     description: "One door for Human Capital work that replaced the team's Excel workbooks: tender certificates, assignment letters, training, employee data and an AI assistant.",
     facts: [{ value: '6', label: 'apps in one door' }, { value: 'Sep 2026', label: 'live since' }, { value: 'RLS', label: 'data per division' }],
   },
   {
-    id: 'q-nexus', href: 'https://q-nexus.epccwika.tech', cover: 'cover-q-nexus.webp', status: LIVE,
+    id: 'q-nexus', href: SHOWCASE('wika-q-nexus-showcase'), cover: 'cover-q-nexus.webp', status: LIVE,
     kicker: 'WIKA EPCC · PROCUREMENT', title: 'Q-NEXUS',
     description: 'Vendor procurement for EPCC tenders, from RFQ and BOQ revisions to quotation reading, technical and commercial evaluation, negotiation and a price database.',
     facts: [{ value: '10', label: 'roles, one flow' }, { value: 'RFQ to award', label: 'end to end' }, { value: 'ID | EN', label: 'bilingual' }],
   },
   {
-    id: 'agentbuff-pos', href: 'https://pos.agentbuff.id', cover: 'cover-pos.webp', status: LIVE,
+    id: 'agentbuff-pos', href: SHOWCASE('agentbuff-pos-showcase'), cover: 'cover-pos.webp', status: LIVE,
     kicker: 'AGENTBUFF · MARKETPLACE', title: 'Kasir POS',
     description: 'A phone-first point of sale for Indonesian shops that opens the store to AI agents over MCP; anything that changes data waits for a person to approve.',
     facts: [{ value: '14', label: 'MCP resources' }, { value: '6', label: 'agent tools' }, { value: 'Human', label: 'approves actions' }],
