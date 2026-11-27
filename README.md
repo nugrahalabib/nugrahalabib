@@ -11,6 +11,8 @@
   <a href="https://instagram.com/nugrahalabib"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/link-instagram-dark.svg"><img src="assets/link-instagram-light.svg" height="40" alt="Instagram"></picture></a>
 </p>
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/heatmap-dark.svg"><img src="assets/heatmap-light.svg" width="100%" alt="Six months of shipping: a calendar heatmap of my GitHub contributions over the last 26 weeks, private company repos included."></picture>
+
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/about-dark.svg"><img src="assets/about-light.svg" width="100%" alt="About me. I am Nugraha Labib Mujaddid (Nugi), an AI founder, agentic engineer and entrepreneur. I bridge advanced technology with business innovation, corporate governance, legal compliance and the procurement rules that decide whether a system can really be deployed."></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/partners-dark.svg"><img src="assets/partners-light.svg" width="100%" alt="Worked with and affiliated: ASUS, ROG, Philips, CapCut, Bibit, Bardi Smart Home, Scarlett, Makarizo, Ripple Indonesia, Apex Warrior, T3 Tech Group, Loxus Cleaner; Wijaya Karya, Caliana Indonesia, Waskita Karya, TikTok, Shopee, Airmas Asri; Google for Startups, Universitas Prasetiya Mulya, Universitas Diponegoro, Universitas Gadjah Mada, Waskita Toll Road, Skill Academy by Ruangguru, Skala Architectural Course, KUNKUN Visual, ARCHINESIA, HMA Amoghasida, Bekraf."></picture>

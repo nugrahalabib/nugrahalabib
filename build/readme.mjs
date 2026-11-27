@@ -39,6 +39,8 @@ const md = [
   '',
   linkRow,
   '',
+  pic('heatmap', 'Six months of shipping: a calendar heatmap of my GitHub contributions over the last 26 weeks, private company repos included.'),
+  '',
   pic('about', `${ABOUT.title}. ${ABOUT.bio[0]}`),
   '',
   pic('partners', `${PARTNERS.title}: ${PARTNERS.groups.map((g) => g.logos.map((l) => l.name).join(', ')).join('; ')}.`),

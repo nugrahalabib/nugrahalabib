@@ -7,6 +7,7 @@ import { THEMES } from './lib/svg.mjs';
 import { hero } from './components/hero.mjs';
 import { readFileSync } from 'node:fs';
 import { activity } from './components/activity.mjs';
+import { heatmap } from './components/heatmap.mjs';
 import { card } from './components/card.mjs';
 import { about } from './components/about.mjs';
 import { partners } from './components/partners.mjs';
@@ -22,6 +23,7 @@ const only = process.argv[2];
 const jobs = [
   { name: 'header', render: (t) => hero(t, HERO) },
   ...LINKS.map((l) => ({ name: `link-${l.id}`, render: (t) => linkButton(t, l) })),
+  { name: 'heatmap', render: (t) => heatmap(t, JSON.parse(readFileSync(join(HERE, 'activity-data.json'), 'utf8'))) },
   { name: 'about', render: (t) => about(t, ABOUT) },
   { name: 'partners', render: (t) => partners(t, PARTNERS) },
   { name: 'section-work', render: (t) => sectionTitle(t, SECTIONS.work) },
