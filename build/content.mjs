@@ -258,3 +258,17 @@ export const SECTIONS = {
   work: { title: 'Selected work', note: 'SCREENSHOTS FROM THE LIVE PRODUCTS' },
   more: { title: 'More on GitHub', note: 'OPEN SOURCE AND EXPERIMENTS' },
 };
+
+// "More on GitHub": compact link cards, two per row, so the section reads well on a phone too.
+export const MORE = [
+  { name: 'DashPro', repo: 'wika-pms-showcase', kicker: 'WIKA EPCC · SHOWCASE', description: 'Project monitoring for WIKA EPCC, rebuilt with secure sign-in and a formula engine.', stack: ['Next.js', 'PostgreSQL'] },
+  { name: 'Buff Your Money', repo: 'agentbuff-bym-showcase', kicker: 'AGENTBUFF · SHOWCASE', description: 'Personal and family finance that your AI agent fills in from a chat message.', stack: ['Next.js', 'PostgreSQL', 'MCP'] },
+  { name: 'Smart Home', repo: 'agentbuff-tuya-showcase', kicker: 'AGENTBUFF · SHOWCASE', description: 'Control Tuya and Smart Life devices by chatting with your AI agent.', stack: ['Next.js', 'MCP'] },
+  { name: 'KostCloud', repo: 'agentbuff-kostcloud-showcase', kicker: 'AGENTBUFF · SHOWCASE', description: 'Boarding-house management for owners, grown from the system behind Mutiara27.', stack: ['Laravel', 'MCP'] },
+  { name: 'Linky', repo: 'Linky-Agentbuff', kicker: 'OPEN SOURCE · MIT', description: 'Short links and link-in-bio pages with QR codes, analytics and webhooks.', stack: ['Next.js', 'Drizzle', 'PostgreSQL'] },
+  { name: 'FinFreedom', repo: 'FinFreedom', kicker: 'OPEN SOURCE · MIT', description: 'Personal finance for Indonesia with FIRE planning, tax and zakat helpers.', stack: ['Next.js', 'Prisma', 'MCP'] },
+  { name: 'Absentra', repo: 'Agentbuff-Absentra', kicker: 'AGENTBUFF', description: 'Attendance for small businesses: GPS and selfie clock-in, shifts, leave, payroll.', stack: ['TypeScript', 'PostgreSQL', 'MCP'] },
+  { name: 'AntiKebo', repo: 'AgentBuff-AntiKebo', kicker: 'AGENTBUFF', description: 'An alarm that keeps going until you are really awake, with your AI agent nudging you.', stack: ['TypeScript', 'Rust', 'MCP'] },
+  { name: 'ANRI demo', repo: 'ANRI-Project', kicker: 'SPEAD AI · DEMO', description: 'Risk intelligence demo for the National Archives of Indonesia, built at Spead AI.', stack: ['Next.js', 'Prisma'] },
+  { name: 'nugrahalabib.com', repo: 'web-portfolio-3.0', kicker: 'PERSONAL SITE', description: 'My site: static pages edited through a self-hosted CMS made for a non-technical owner.', stack: ['React', 'Payload CMS'] },
+];

@@ -2,7 +2,7 @@
 import { writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { ABOUT, CARDS, CONTACT, HERO, JOURNEY, LINKS, PARTNERS, PRINCIPLES, SECTIONS } from './content.mjs';
+import { ABOUT, CARDS, CONTACT, HERO, JOURNEY, LINKS, MORE, PARTNERS, PRINCIPLES, SECTIONS } from './content.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const pic = (name, alt, attrs = 'width="100%"') =>
@@ -17,19 +17,14 @@ for (let i = 0; i < CARDS.length; i += 2) {
   cardRows.push(`<p>\n${pair.join('\n')}\n</p>`);
 }
 
-const more = [
-  ['DashPro', 'wika-pms-showcase', 'Project monitoring for the EPCC Division of WIKA, a rebuild in progress with secure sign-in, projects and a formula engine', 'Next.js, PostgreSQL'],
-  ['Buff Your Money', 'agentbuff-bym-showcase', 'Personal and family finance that your AI agent fills in from a chat message, with no LLM inside the app', 'Next.js, PostgreSQL, MCP'],
-  ['Smart Home for AgentBuff', 'agentbuff-tuya-showcase', 'Control Tuya and Smart Life devices by chatting with your AI agent, plus an Apple Home style web app', 'Next.js, MCP'],
-  ['Linky', 'Linky-Agentbuff', 'Open-source link shortener and link-in-bio pages with branded QR codes, click analytics, webhooks and a REST API', 'Next.js, Drizzle, PostgreSQL'],
-  ['Absentra', 'Agentbuff-Absentra', 'Attendance for small businesses: GPS geofence and selfie clock-in, shifts, leave, payroll recap, and an MCP endpoint for agents', 'TypeScript, PostgreSQL, MCP'],
-  ['AntiKebo', 'AgentBuff-AntiKebo', 'An alarm that keeps going until you are really awake, and asks your AI agent to keep nudging you', 'TypeScript, Rust, MCP'],
-  ['FinFreedom', 'FinFreedom', 'Personal finance for Indonesia with FIRE planning by Monte Carlo, tax and zakat helpers, and an MCP server', 'Next.js, Prisma'],
-  ['KostCloud', 'agentbuff-kostcloud-showcase', 'Multi-tenant boarding-house management that grew out of the system behind Mutiara27', 'Laravel, MCP'],
-  ['ANRI demo', 'ANRI-Project', 'Risk-intelligence demo for the National Archives of Indonesia, built at Spead AI', 'Next.js, Prisma'],
-  ['nugrahalabib.com', 'web-portfolio-3.0', 'My site: static prerendered pages edited through a self-hosted CMS written for a non-technical owner', 'React, Payload CMS'],
-];
-const table = ['| Project | What it is | Built with |', '| --- | --- | --- |', ...more.map(([n, r, w, b]) => `| [${n}](https://github.com/nugrahalabib/${r}) | ${w} | ${b} |`)].join('\n');
+// Cards instead of a table: GitHub squeezes table columns on a phone until each cell is a
+// one-word-per-line column, while a pair of pictures scales down as one piece.
+const moreRows = [];
+for (let i = 0; i < MORE.length; i += 2) {
+  const pair = MORE.slice(i, i + 2).map((m) =>
+    `  ${link(`https://github.com/nugrahalabib/${m.repo}`, pic(`more-${m.repo.toLowerCase()}`, `${m.name}. ${m.description} Built with ${m.stack.join(', ')}.`, 'width="49%"'))}`);
+  moreRows.push(`<p>\n${pair.join('\n')}\n</p>`);
+}
 
 const md = [
   '<!-- Every picture here is drawn by build/ (in the profile repo) from the content of nugrahalabib.com:',
@@ -57,7 +52,7 @@ const md = [
   '',
   pic('section-more', SECTIONS.more.title),
   '',
-  table,
+  ...moreRows,
   '',
   link(`mailto:${CONTACT.email}`, pic('contact', `${CONTACT.title}. ${CONTACT.lead} ${CONTACT.email}`)),
   '',

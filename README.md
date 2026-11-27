@@ -48,18 +48,26 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-more-dark.svg"><img src="assets/section-more-light.svg" width="100%" alt="More on GitHub"></picture>
 
-| Project | What it is | Built with |
-| --- | --- | --- |
-| [DashPro](https://github.com/nugrahalabib/wika-pms-showcase) | Project monitoring for the EPCC Division of WIKA, a rebuild in progress with secure sign-in, projects and a formula engine | Next.js, PostgreSQL |
-| [Buff Your Money](https://github.com/nugrahalabib/agentbuff-bym-showcase) | Personal and family finance that your AI agent fills in from a chat message, with no LLM inside the app | Next.js, PostgreSQL, MCP |
-| [Smart Home for AgentBuff](https://github.com/nugrahalabib/agentbuff-tuya-showcase) | Control Tuya and Smart Life devices by chatting with your AI agent, plus an Apple Home style web app | Next.js, MCP |
-| [Linky](https://github.com/nugrahalabib/Linky-Agentbuff) | Open-source link shortener and link-in-bio pages with branded QR codes, click analytics, webhooks and a REST API | Next.js, Drizzle, PostgreSQL |
-| [Absentra](https://github.com/nugrahalabib/Agentbuff-Absentra) | Attendance for small businesses: GPS geofence and selfie clock-in, shifts, leave, payroll recap, and an MCP endpoint for agents | TypeScript, PostgreSQL, MCP |
-| [AntiKebo](https://github.com/nugrahalabib/AgentBuff-AntiKebo) | An alarm that keeps going until you are really awake, and asks your AI agent to keep nudging you | TypeScript, Rust, MCP |
-| [FinFreedom](https://github.com/nugrahalabib/FinFreedom) | Personal finance for Indonesia with FIRE planning by Monte Carlo, tax and zakat helpers, and an MCP server | Next.js, Prisma |
-| [KostCloud](https://github.com/nugrahalabib/agentbuff-kostcloud-showcase) | Multi-tenant boarding-house management that grew out of the system behind Mutiara27 | Laravel, MCP |
-| [ANRI demo](https://github.com/nugrahalabib/ANRI-Project) | Risk-intelligence demo for the National Archives of Indonesia, built at Spead AI | Next.js, Prisma |
-| [nugrahalabib.com](https://github.com/nugrahalabib/web-portfolio-3.0) | My site: static prerendered pages edited through a self-hosted CMS written for a non-technical owner | React, Payload CMS |
+<p>
+  <a href="https://github.com/nugrahalabib/wika-pms-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-wika-pms-showcase-dark.svg"><img src="assets/more-wika-pms-showcase-light.svg" width="49%" alt="DashPro. Project monitoring for WIKA EPCC, rebuilt with secure sign-in and a formula engine. Built with Next.js, PostgreSQL."></picture></a>
+  <a href="https://github.com/nugrahalabib/agentbuff-bym-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-agentbuff-bym-showcase-dark.svg"><img src="assets/more-agentbuff-bym-showcase-light.svg" width="49%" alt="Buff Your Money. Personal and family finance that your AI agent fills in from a chat message. Built with Next.js, PostgreSQL, MCP."></picture></a>
+</p>
+<p>
+  <a href="https://github.com/nugrahalabib/agentbuff-tuya-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-agentbuff-tuya-showcase-dark.svg"><img src="assets/more-agentbuff-tuya-showcase-light.svg" width="49%" alt="Smart Home. Control Tuya and Smart Life devices by chatting with your AI agent. Built with Next.js, MCP."></picture></a>
+  <a href="https://github.com/nugrahalabib/agentbuff-kostcloud-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-agentbuff-kostcloud-showcase-dark.svg"><img src="assets/more-agentbuff-kostcloud-showcase-light.svg" width="49%" alt="KostCloud. Boarding-house management for owners, grown from the system behind Mutiara27. Built with Laravel, MCP."></picture></a>
+</p>
+<p>
+  <a href="https://github.com/nugrahalabib/Linky-Agentbuff"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-linky-agentbuff-dark.svg"><img src="assets/more-linky-agentbuff-light.svg" width="49%" alt="Linky. Short links and link-in-bio pages with QR codes, analytics and webhooks. Built with Next.js, Drizzle, PostgreSQL."></picture></a>
+  <a href="https://github.com/nugrahalabib/FinFreedom"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-finfreedom-dark.svg"><img src="assets/more-finfreedom-light.svg" width="49%" alt="FinFreedom. Personal finance for Indonesia with FIRE planning, tax and zakat helpers. Built with Next.js, Prisma, MCP."></picture></a>
+</p>
+<p>
+  <a href="https://github.com/nugrahalabib/Agentbuff-Absentra"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-agentbuff-absentra-dark.svg"><img src="assets/more-agentbuff-absentra-light.svg" width="49%" alt="Absentra. Attendance for small businesses: GPS and selfie clock-in, shifts, leave, payroll. Built with TypeScript, PostgreSQL, MCP."></picture></a>
+  <a href="https://github.com/nugrahalabib/AgentBuff-AntiKebo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-agentbuff-antikebo-dark.svg"><img src="assets/more-agentbuff-antikebo-light.svg" width="49%" alt="AntiKebo. An alarm that keeps going until you are really awake, with your AI agent nudging you. Built with TypeScript, Rust, MCP."></picture></a>
+</p>
+<p>
+  <a href="https://github.com/nugrahalabib/ANRI-Project"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-anri-project-dark.svg"><img src="assets/more-anri-project-light.svg" width="49%" alt="ANRI demo. Risk intelligence demo for the National Archives of Indonesia, built at Spead AI. Built with Next.js, Prisma."></picture></a>
+  <a href="https://github.com/nugrahalabib/web-portfolio-3.0"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-web-portfolio-3.0-dark.svg"><img src="assets/more-web-portfolio-3.0-light.svg" width="49%" alt="nugrahalabib.com. My site: static pages edited through a self-hosted CMS made for a non-technical owner. Built with React, Payload CMS."></picture></a>
+</p>
 
 <a href="mailto:nugrahalabib@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact-dark.svg"><img src="assets/contact-light.svg" width="100%" alt="Contact. Email works best. nugrahalabib@gmail.com"></picture></a>
 

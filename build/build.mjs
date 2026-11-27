@@ -8,12 +8,13 @@ import { hero } from './components/hero.mjs';
 import { readFileSync } from 'node:fs';
 import { activity } from './components/activity.mjs';
 import { heatmap } from './components/heatmap.mjs';
+import { moreCard } from './components/more.mjs';
 import { card } from './components/card.mjs';
 import { about } from './components/about.mjs';
 import { partners } from './components/partners.mjs';
 import { journey } from './components/journey.mjs';
 import { contact, linkButton, principles, sectionTitle } from './components/blocks.mjs';
-import { ABOUT, CARDS, CONTACT, HERO, JOURNEY, LINKS, PARTNERS, PRINCIPLES, SECTIONS } from './content.mjs';
+import { ABOUT, CARDS, CONTACT, HERO, JOURNEY, LINKS, MORE, PARTNERS, PRINCIPLES, SECTIONS } from './content.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const OUT = join(HERE, '..', 'assets');
@@ -32,6 +33,7 @@ const jobs = [
   { name: 'principles', render: (t) => principles(t, PRINCIPLES) },
   { name: 'journey', render: (t) => journey(t, JOURNEY) },
   { name: 'section-more', render: (t) => sectionTitle(t, SECTIONS.more) },
+  ...MORE.map((item) => ({ name: `more-${item.repo.toLowerCase()}`, render: (t) => moreCard(t, item) })),
   { name: 'contact', render: (t) => contact(t, CONTACT) },
 ];
 
