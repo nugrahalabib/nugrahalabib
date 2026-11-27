@@ -221,8 +221,8 @@ export const CARDS = [
   {
     id: 'future-companion', href: SHOWCASE('Future-Companion'), cover: 'cover-companion.webp',
     kicker: 'EXHIBITION · PRASETIYA MULYA', title: 'Future Companion',
-    description: 'An exhibition piece set in 2076: visitors design an AI companion, talk to it by voice for five minutes and order it, while the app collects research data.',
-    facts: [{ value: '2076', label: 'story year' }, { value: '5 min', label: 'live voice talk' }, { value: 'MIT', label: 'open source' }],
+    description: 'An exhibition piece set in 2075: visitors design an AI companion, talk to it by voice for five minutes and order it, while the app collects research data.',
+    facts: [{ value: '2075', label: 'story year' }, { value: '5 min', label: 'live voice talk' }, { value: 'MIT', label: 'open source' }],
   },
   {
     id: 'berseni', href: SHOWCASE('Website-Berseni.id'), cover: 'cover-berseni.webp', status: LIVE,

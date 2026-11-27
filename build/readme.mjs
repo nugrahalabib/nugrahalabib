@@ -24,9 +24,8 @@ const more = [
   ['Linky', 'Linky-Agentbuff', 'Open-source link shortener and link-in-bio pages with branded QR codes, click analytics, webhooks and a REST API', 'Next.js, Drizzle, PostgreSQL'],
   ['Absentra', 'Agentbuff-Absentra', 'Attendance for small businesses: GPS geofence and selfie clock-in, shifts, leave, payroll recap, and an MCP endpoint for agents', 'TypeScript, PostgreSQL, MCP'],
   ['AntiKebo', 'AgentBuff-AntiKebo', 'An alarm that keeps going until you are really awake, and asks your AI agent to keep nudging you', 'TypeScript, Rust, MCP'],
-  ['CV-Buff', 'CV-Buff', 'Web CV editor with a live A4 preview, eight templates and optional AI rewriting', 'TanStack Start, React'],
   ['FinFreedom', 'FinFreedom', 'Personal finance for Indonesia with FIRE planning by Monte Carlo, tax and zakat helpers, and an MCP server', 'Next.js, Prisma'],
-  ['KostCloud', 'AgentBuff-kost-management-system', 'Multi-tenant boarding-house management that grew out of the system behind Mutiara27', 'Laravel, MCP'],
+  ['KostCloud', 'agentbuff-kostcloud-showcase', 'Multi-tenant boarding-house management that grew out of the system behind Mutiara27', 'Laravel, MCP'],
   ['ANRI demo', 'ANRI-Project', 'Risk-intelligence demo for the National Archives of Indonesia, built at Spead AI', 'Next.js, Prisma'],
   ['nugrahalabib.com', 'web-portfolio-3.0', 'My site: static prerendered pages edited through a self-hosted CMS written for a non-technical owner', 'React, Payload CMS'],
 ];

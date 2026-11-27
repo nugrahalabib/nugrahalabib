@@ -34,7 +34,7 @@
   <a href="https://github.com/nugrahalabib/AgentBuff-Co-Founder"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-co-founder-dark.svg"><img src="assets/card-co-founder-light.svg" width="49%" alt="AI Co-Founder. From a raw idea to a sourced validation score, a financial model, a brand kit and investor documents, with every number computed by tested code."></picture></a>
 </p>
 <p>
-  <a href="https://github.com/nugrahalabib/Future-Companion"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-future-companion-dark.svg"><img src="assets/card-future-companion-light.svg" width="49%" alt="Future Companion. An exhibition piece set in 2076: visitors design an AI companion, talk to it by voice for five minutes and order it, while the app collects research data."></picture></a>
+  <a href="https://github.com/nugrahalabib/Future-Companion"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-future-companion-dark.svg"><img src="assets/card-future-companion-light.svg" width="49%" alt="Future Companion. An exhibition piece set in 2075: visitors design an AI companion, talk to it by voice for five minutes and order it, while the app collects research data."></picture></a>
   <a href="https://github.com/nugrahalabib/Website-Berseni.id"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-berseni-dark.svg"><img src="assets/card-berseni-light.svg" width="49%" alt="Berseni.id. Bilingual site and CMS for an Indonesian art community: painting classes, workshops, an artwork shop and a blog, all edited from one admin panel."></picture></a>
 </p>
 
@@ -52,9 +52,8 @@
 | [Linky](https://github.com/nugrahalabib/Linky-Agentbuff) | Open-source link shortener and link-in-bio pages with branded QR codes, click analytics, webhooks and a REST API | Next.js, Drizzle, PostgreSQL |
 | [Absentra](https://github.com/nugrahalabib/Agentbuff-Absentra) | Attendance for small businesses: GPS geofence and selfie clock-in, shifts, leave, payroll recap, and an MCP endpoint for agents | TypeScript, PostgreSQL, MCP |
 | [AntiKebo](https://github.com/nugrahalabib/AgentBuff-AntiKebo) | An alarm that keeps going until you are really awake, and asks your AI agent to keep nudging you | TypeScript, Rust, MCP |
-| [CV-Buff](https://github.com/nugrahalabib/CV-Buff) | Web CV editor with a live A4 preview, eight templates and optional AI rewriting | TanStack Start, React |
 | [FinFreedom](https://github.com/nugrahalabib/FinFreedom) | Personal finance for Indonesia with FIRE planning by Monte Carlo, tax and zakat helpers, and an MCP server | Next.js, Prisma |
-| [KostCloud](https://github.com/nugrahalabib/AgentBuff-kost-management-system) | Multi-tenant boarding-house management that grew out of the system behind Mutiara27 | Laravel, MCP |
+| [KostCloud](https://github.com/nugrahalabib/agentbuff-kostcloud-showcase) | Multi-tenant boarding-house management that grew out of the system behind Mutiara27 | Laravel, MCP |
 | [ANRI demo](https://github.com/nugrahalabib/ANRI-Project) | Risk-intelligence demo for the National Archives of Indonesia, built at Spead AI | Next.js, Prisma |
 | [nugrahalabib.com](https://github.com/nugrahalabib/web-portfolio-3.0) | My site: static prerendered pages edited through a self-hosted CMS written for a non-technical owner | React, Payload CMS |
 
