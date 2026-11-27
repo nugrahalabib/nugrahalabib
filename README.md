@@ -40,34 +40,36 @@
   <a href="https://github.com/nugrahalabib/Website-Berseni.id"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-berseni-dark.svg"><img src="assets/card-berseni-light.svg" width="49%" alt="Berseni.id. Bilingual site and CMS for an Indonesian art community: painting classes, workshops, an artwork shop and a blog, all edited from one admin panel."></picture></a>
 </p>
 
+<details>
+<summary><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-toggle-dark.svg"><img src="assets/more-toggle-light.svg" width="95%" align="middle" alt="View 10 more projects: DashPro, Buff Your Money, Smart Home, KostCloud, Linky, FinFreedom, Absentra, AntiKebo, ANRI demo, nugrahalabib.com."></picture></summary>
+
+<p>
+  <a href="https://github.com/nugrahalabib/wika-pms-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-dashpro-dark.svg"><img src="assets/card-dashpro-light.svg" width="49%" alt="DashPro. Project control for the EPCC Division that replaces an Excel dashboard: progress, delay causes and a formula engine, rebuilt with secure sign-in."></picture></a>
+  <a href="https://github.com/nugrahalabib/agentbuff-bym-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-bym-dark.svg"><img src="assets/card-bym-light.svg" width="49%" alt="Buff Your Money. Personal and family finance that your AI agent fills in from a chat message. The app has no LLM inside, and any agent action can be undone."></picture></a>
+</p>
+<p>
+  <a href="https://github.com/nugrahalabib/agentbuff-tuya-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-smart-home-dark.svg"><img src="assets/card-smart-home-light.svg" width="49%" alt="Smart Home. Control Tuya and Smart Life devices by chatting with your AI agent, with an Apple Home style web app and a confirmation step for risky devices."></picture></a>
+  <a href="https://github.com/nugrahalabib/agentbuff-kostcloud-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-kostcloud-dark.svg"><img src="assets/card-kostcloud-light.svg" width="49%" alt="KostCloud. Boarding-house management for kos owners in the cloud: rooms, tenants, payments and cash flow, with an MCP server their AI agent can use."></picture></a>
+</p>
+<p>
+  <a href="https://github.com/nugrahalabib/Linky-Agentbuff"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-linky-dark.svg"><img src="assets/card-linky-light.svg" width="49%" alt="Linky. Short links, branded QR codes and link-in-bio pages with click analytics, a REST API and signed webhooks. Every feature free and self-hostable."></picture></a>
+  <a href="https://github.com/nugrahalabib/FinFreedom"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-finfreedom-dark.svg"><img src="assets/card-finfreedom-light.svg" width="49%" alt="FinFreedom. Personal finance for Indonesia: four budget methods, FIRE planning with Monte Carlo, PPh 21, zakat and BPJS helpers, and an MCP server for your agent."></picture></a>
+</p>
+<p>
+  <a href="https://github.com/nugrahalabib/Agentbuff-Absentra"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-absentra-dark.svg"><img src="assets/card-absentra-light.svg" width="49%" alt="Absentra. Attendance for small businesses from each employee's own phone: GPS and selfie clock-in, shifts, leave and a payroll recap under PP 35/2021."></picture></a>
+  <a href="https://github.com/nugrahalabib/AgentBuff-AntiKebo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-antikebo-dark.svg"><img src="assets/card-antikebo-light.svg" width="49%" alt="AntiKebo. An alarm for deep sleepers that keeps ringing on every device, scolds you and messages you through your AI agent until you solve a challenge."></picture></a>
+</p>
+<p>
+  <a href="https://github.com/nugrahalabib/ANRI-Project"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-anri-dark.svg"><img src="assets/card-anri-light.svg" width="49%" alt="ANRI demo. Risk intelligence prototype for the National Archives of Indonesia: RFID record tracking, explained risk scores, policy checks and a signed audit chain."></picture></a>
+  <a href="https://github.com/nugrahalabib/web-portfolio-3.0"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-portfolio-dark.svg"><img src="assets/card-portfolio-light.svg" width="49%" alt="nugrahalabib.com. My site, prerendered to static HTML in English and Indonesian and edited through a self-hosted CMS written for a non-technical owner."></picture></a>
+</p>
+</details>
+
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg"><img src="assets/activity-light.svg" width="100%" alt="Behind the private repos: real numbers from GitHub for work in private company repositories, with contributions per month."></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/principles-dark.svg"><img src="assets/principles-light.svg" width="100%" alt="How I build. Numbers come from code. Every quote is checked. People approve side effects. Isolation by default. It runs where the data lives."></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg"><img src="assets/journey-light.svg" width="100%" alt="What I do, and how I got here. Spead AI · Founder & Lead AI Engineer, AgentBuff · CEO, WIKA EPCC · IT Specialist, Caliana · Strategic Initiative Analyst; NgR Service · laptop & PC service, Maxis Studio · design & build, LAB.in Studio · 3D visualisation, 30+ clients, Mutiara27 · 100+ room boarding house, Gultik & Soto Masnug · 5.0 from 300+ reviews, D'Bestie Cafe · campus cafe; Zurnalis Architect, Airmas Asri, Waskita Karya · contracts & claims; TikTok @nugrahalabib · 130K+ followers, Shopee · official creator & affiliate; Diponegoro University · B.Arch, cum laude, Prasetiya Mulya · MM New Ventures Innovation."></picture>
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/section-more-dark.svg"><img src="assets/section-more-light.svg" width="100%" alt="More on GitHub"></picture>
-
-<p>
-  <a href="https://github.com/nugrahalabib/wika-pms-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-wika-pms-showcase-dark.svg"><img src="assets/more-wika-pms-showcase-light.svg" width="49%" alt="DashPro. Project monitoring for WIKA EPCC, rebuilt with secure sign-in and a formula engine. Built with Next.js, PostgreSQL."></picture></a>
-  <a href="https://github.com/nugrahalabib/agentbuff-bym-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-agentbuff-bym-showcase-dark.svg"><img src="assets/more-agentbuff-bym-showcase-light.svg" width="49%" alt="Buff Your Money. Personal and family finance that your AI agent fills in from a chat message. Built with Next.js, PostgreSQL, MCP."></picture></a>
-</p>
-<p>
-  <a href="https://github.com/nugrahalabib/agentbuff-tuya-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-agentbuff-tuya-showcase-dark.svg"><img src="assets/more-agentbuff-tuya-showcase-light.svg" width="49%" alt="Smart Home. Control Tuya and Smart Life devices by chatting with your AI agent. Built with Next.js, MCP."></picture></a>
-  <a href="https://github.com/nugrahalabib/agentbuff-kostcloud-showcase"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-agentbuff-kostcloud-showcase-dark.svg"><img src="assets/more-agentbuff-kostcloud-showcase-light.svg" width="49%" alt="KostCloud. Boarding-house management for owners, grown from the system behind Mutiara27. Built with Laravel, MCP."></picture></a>
-</p>
-<p>
-  <a href="https://github.com/nugrahalabib/Linky-Agentbuff"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-linky-agentbuff-dark.svg"><img src="assets/more-linky-agentbuff-light.svg" width="49%" alt="Linky. Short links and link-in-bio pages with QR codes, analytics and webhooks. Built with Next.js, Drizzle, PostgreSQL."></picture></a>
-  <a href="https://github.com/nugrahalabib/FinFreedom"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-finfreedom-dark.svg"><img src="assets/more-finfreedom-light.svg" width="49%" alt="FinFreedom. Personal finance for Indonesia with FIRE planning, tax and zakat helpers. Built with Next.js, Prisma, MCP."></picture></a>
-</p>
-<p>
-  <a href="https://github.com/nugrahalabib/Agentbuff-Absentra"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-agentbuff-absentra-dark.svg"><img src="assets/more-agentbuff-absentra-light.svg" width="49%" alt="Absentra. Attendance for small businesses: GPS and selfie clock-in, shifts, leave, payroll. Built with TypeScript, PostgreSQL, MCP."></picture></a>
-  <a href="https://github.com/nugrahalabib/AgentBuff-AntiKebo"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-agentbuff-antikebo-dark.svg"><img src="assets/more-agentbuff-antikebo-light.svg" width="49%" alt="AntiKebo. An alarm that keeps going until you are really awake, with your AI agent nudging you. Built with TypeScript, Rust, MCP."></picture></a>
-</p>
-<p>
-  <a href="https://github.com/nugrahalabib/ANRI-Project"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-anri-project-dark.svg"><img src="assets/more-anri-project-light.svg" width="49%" alt="ANRI demo. Risk intelligence demo for the National Archives of Indonesia, built at Spead AI. Built with Next.js, Prisma."></picture></a>
-  <a href="https://github.com/nugrahalabib/web-portfolio-3.0"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/more-web-portfolio-3.0-dark.svg"><img src="assets/more-web-portfolio-3.0-light.svg" width="49%" alt="nugrahalabib.com. My site: static pages edited through a self-hosted CMS made for a non-technical owner. Built with React, Payload CMS."></picture></a>
-</p>
 
 <a href="mailto:nugrahalabib@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact-dark.svg"><img src="assets/contact-light.svg" width="100%" alt="Contact. Email works best. nugrahalabib@gmail.com"></picture></a>
 

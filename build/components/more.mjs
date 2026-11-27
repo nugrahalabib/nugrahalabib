@@ -1,56 +1,36 @@
-// "More on GitHub" card: kicker, title, a two-line description and stack chips, with an arrow
-// that marks the whole card as a link. Type is set large because two cards share a row, so
-// the text still reads on a phone where the pair is squeezed to the screen width.
-import { MONO, SANS } from '../lib/fonts.mjs';
-import { document, esc, measure, surface, wrap } from '../lib/svg.mjs';
+// The "View more" bar that opens the second set of work cards. It sits inside a <summary>, so
+// GitHub toggles the cards with no script; the chevron nudges down to invite the click.
+import { SANS } from '../lib/fonts.mjs';
+import { document, esc, surface } from '../lib/svg.mjs';
 
-const W = 600;
-const H = 300;
-const PAD = 34;
-const DESC = { size: 22, lineHeight: 30, maxLines: 2 };
-const CHIP = { size: 17, h: 38, padX: 16, gap: 10 };
+const W = 1200;
+const H = 104;
+const NAMES_SHOWN = 5;
 
-function chips(theme, stack, y) {
-  let x = PAD;
-  return stack.map((label) => {
-    const w = measure(label, 'inter-500', CHIP.size) + CHIP.padX * 2;
-    const chip = `<rect x="${x}" y="${y}" width="${w.toFixed(1)}" height="${CHIP.h}" rx="${CHIP.h / 2}" fill="${theme.name === 'dark' ? '#2b2b31' : '#ffffff'}" stroke="${theme.border}"/>` +
-      `<text class="c" x="${(x + CHIP.padX).toFixed(1)}" y="${y + 25}">${esc(label)}</text>`;
-    x += w + CHIP.gap;
-    return chip;
-  }).join('');
-}
-
-function arrow(theme) {
-  const cx = W - PAD - 22;
-  const cy = PAD + 20;
-  return `<g class="go"><circle cx="${cx}" cy="${cy}" r="22" fill="${theme.redDeep}"/>` +
-    `<path d="M${cx - 6} ${cy + 6}L${cx + 6} ${cy - 6}M${cx - 4} ${cy - 6}H${cx + 6}V${cy + 4}" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g>`;
-}
-
-export function moreCard(theme, item) {
-  const lines = wrap(item.description, 'inter-500', DESC.size, W - PAD * 2);
-  if (lines.length > DESC.maxLines) throw new Error(`"${item.name}" description needs ${lines.length} lines, keep it to ${DESC.maxLines}`);
+export function moreToggle(theme, items) {
+  const names = items.map((item) => item.title);
+  const preview = `${names.slice(0, NAMES_SHOWN).join(', ')} and ${names.length - NAMES_SHOWN} more`;
+  const cx = W - 70;
+  const cy = H / 2;
   return document({
     width: W,
     height: H,
-    title: `${item.name} on GitHub`,
-    desc: `${item.kicker}. ${item.description} Built with ${item.stack.join(', ')}.`,
+    title: `View ${items.length} more projects`,
+    desc: `Opens ${items.length} more project cards: ${names.join(', ')}.`,
     css: [
-      `text{font-family:${SANS}}.k{font-family:${MONO}}`,
-      `.k{font-size:14px;font-weight:500;letter-spacing:1.4px;fill:${theme.muted}}`,
-      `.t{font-size:38px;font-weight:800;letter-spacing:-1.3px;fill:${theme.text}}`,
-      `.d{font-size:${DESC.size}px;font-weight:500;fill:${theme.text2}}`,
-      `.c{font-size:${CHIP.size}px;font-weight:500;fill:${theme.text2}}`,
+      `text{font-family:${SANS}}`,
+      `.t{font-size:30px;font-weight:800;letter-spacing:-1px;fill:${theme.text}}`,
+      `.s{font-size:17px;font-weight:500;fill:${theme.muted}}`,
+      `.chev{animation:nudge 1.8s ease-in-out infinite}@keyframes nudge{0%,100%{transform:translateY(-2px)}50%{transform:translateY(3px)}}`,
+      `@media (prefers-reduced-motion: reduce){.chev{animation:none}}`,
     ].join(''),
     body: [
-      surface(theme, 'panel', { w: W, h: H, rx: 26 }),
-      `<text class="k" x="${PAD}" y="${PAD + 18}">${esc(item.kicker)}</text>`,
-      arrow(theme),
-      `<text class="t" x="${PAD - 2}" y="${PAD + 78}">${esc(item.name)}</text>`,
-      ...lines.map((line, i) => `<text class="d" x="${PAD}" y="${PAD + 122 + i * DESC.lineHeight}">${esc(line)}</text>`),
-      chips(theme, item.stack, H - PAD - CHIP.h),
+      surface(theme, 'panel', { w: W, h: H, rx: H / 2 }),
+      `<text class="t" x="44" y="${cy - 2}">View ${items.length} more projects</text>`,
+      `<text class="s" x="45" y="${cy + 26}">${esc(preview)}</text>`,
+      `<circle cx="${cx}" cy="${cy}" r="28" fill="${theme.redDeep}"/>`,
+      `<g class="chev"><path d="M${cx - 9} ${cy - 4}l9 9 9-9" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>`,
     ].join(''),
-    fonts: ['inter-500', 'inter-800', 'mono-500'],
+    fonts: ['inter-500', 'inter-800'],
   });
 }

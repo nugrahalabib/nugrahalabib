@@ -2,7 +2,7 @@
 import { writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { ABOUT, CARDS, CONTACT, HERO, JOURNEY, LINKS, MORE, PARTNERS, PRINCIPLES, SECTIONS } from './content.mjs';
+import { ABOUT, CARDS, CONTACT, HERO, JOURNEY, LINKS, MORE_CARDS, PARTNERS, PRINCIPLES, SECTIONS } from './content.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const pic = (name, alt, attrs = 'width="100%"') =>
@@ -11,20 +11,25 @@ const link = (href, inner) => `<a href="${href}">${inner}</a>`;
 
 const linkRow = `<p align="center">\n${LINKS.map((l) => `  ${link(l.href, pic(`link-${l.id}`, l.label, 'height="40"'))}`).join('\n')}\n</p>`;
 
-const cardRows = [];
-for (let i = 0; i < CARDS.length; i += 2) {
-  const pair = CARDS.slice(i, i + 2).map((c) => `  ${link(c.href, pic(`card-${c.id}`, `${c.title}. ${c.description}`, 'width="49%"'))}`);
-  cardRows.push(`<p>\n${pair.join('\n')}\n</p>`);
+/** Work cards two per row, each linking to its showcase or repo. */
+function cardRows(list) {
+  const rows = [];
+  for (let i = 0; i < list.length; i += 2) {
+    const pair = list.slice(i, i + 2).map((c) => `  ${link(c.href, pic(`card-${c.id}`, `${c.title}. ${c.description}`, 'width="49%"'))}`);
+    rows.push(`<p>\n${pair.join('\n')}\n</p>`);
+  }
+  return rows;
 }
 
-// Cards instead of a table: GitHub squeezes table columns on a phone until each cell is a
-// one-word-per-line column, while a pair of pictures scales down as one piece.
-const moreRows = [];
-for (let i = 0; i < MORE.length; i += 2) {
-  const pair = MORE.slice(i, i + 2).map((m) =>
-    `  ${link(`https://github.com/nugrahalabib/${m.repo}`, pic(`more-${m.repo.toLowerCase()}`, `${m.name}. ${m.description} Built with ${m.stack.join(', ')}.`, 'width="49%"'))}`);
-  moreRows.push(`<p>\n${pair.join('\n')}\n</p>`);
-}
+// More work sits behind a <details> toggle: GitHub opens it without script, and the page
+// stays short until someone asks for the rest.
+const moreWork = [
+  '<details>',
+  `<summary>${pic('more-toggle', `View ${MORE_CARDS.length} more projects: ${MORE_CARDS.map((c) => c.title).join(', ')}.`, 'width="95%" align="middle"')}</summary>`,
+  '',
+  ...cardRows(MORE_CARDS),
+  '</details>',
+].join('\n');
 
 const md = [
   '<!-- Every picture here is drawn by build/ (in the profile repo) from the content of nugrahalabib.com:',
@@ -42,17 +47,15 @@ const md = [
   '',
   pic('section-work', SECTIONS.work.title),
   '',
-  ...cardRows,
+  ...cardRows(CARDS),
+  '',
+  moreWork,
   '',
   pic('activity', 'Behind the private repos: real numbers from GitHub for work in private company repositories, with contributions per month.'),
   '',
   pic('principles', `${PRINCIPLES.title}. ${PRINCIPLES.items.map((i) => i.title).join('. ')}.`),
   '',
   pic('journey', `${JOURNEY.title} ${JOURNEY.lanes.map((l) => l.items.map((i) => i.label).join(', ')).join('; ')}.`),
-  '',
-  pic('section-more', SECTIONS.more.title),
-  '',
-  ...moreRows,
   '',
   link(`mailto:${CONTACT.email}`, pic('contact', `${CONTACT.title}. ${CONTACT.lead} ${CONTACT.email}`)),
   '',
