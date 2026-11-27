@@ -5,6 +5,8 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { THEMES } from './lib/svg.mjs';
 import { hero } from './components/hero.mjs';
+import { readFileSync } from 'node:fs';
+import { activity } from './components/activity.mjs';
 import { card } from './components/card.mjs';
 import { about } from './components/about.mjs';
 import { partners } from './components/partners.mjs';
@@ -24,6 +26,7 @@ const jobs = [
   { name: 'partners', render: (t) => partners(t, PARTNERS) },
   { name: 'section-work', render: (t) => sectionTitle(t, SECTIONS.work) },
   ...CARDS.map((item) => ({ name: `card-${item.id}`, render: (t) => card(t, item) })),
+  { name: 'activity', render: (t) => activity(t, JSON.parse(readFileSync(join(HERE, 'activity-data.json'), 'utf8'))) },
   { name: 'principles', render: (t) => principles(t, PRINCIPLES) },
   { name: 'journey', render: (t) => journey(t, JOURNEY) },
   { name: 'section-more', render: (t) => sectionTitle(t, SECTIONS.more) },

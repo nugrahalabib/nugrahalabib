@@ -1,6 +1,8 @@
 // Embeds only the glyphs an SVG actually uses, so every image stays a few KB
 // and renders with the real brand fonts inside GitHub's <img> sandbox.
 import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
+import { existsSync, mkdirSync } from 'node:fs';
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, dirname } from 'node:path';
@@ -9,6 +11,8 @@ import { fileURLToPath } from 'node:url';
 const HERE = dirname(fileURLToPath(import.meta.url));
 const FONTS_DIR = join(HERE, '..', 'fonts');
 const PYTHON = process.env.FONT_PYTHON; // a Python with fonttools + brotli
+// Subsets are cached by font + characters, so the light and dark copy of a picture cost one run.
+const FONT_CACHE = process.env.FONT_CACHE ?? join(HERE, '..', '..', '..', 'tools', 'font-cache');
 
 export const FAMILY = {
   'inter-400': { family: 'NInter', weight: 400 },
@@ -41,6 +45,19 @@ function usedCharacters(svgBody) {
 }
 
 function subsetToBase64(fontKey, chars) {
+  // FONT_FULL=1: embed the prebuilt Latin subset as is (fast, about 15 KB per face).
+  if (process.env.FONT_FULL) return readFileSync(join(FONTS_DIR, `${fontKey}.woff2`)).toString('base64');
+  const key = createHash('sha1').update(`${fontKey}
+${chars}`).digest('hex');
+  const cached = join(FONT_CACHE, `${key}.b64`);
+  if (existsSync(cached)) return readFileSync(cached, 'utf8');
+  const data = subsetUncached(fontKey, chars);
+  mkdirSync(FONT_CACHE, { recursive: true });
+  writeFileSync(cached, data);
+  return data;
+}
+
+function subsetUncached(fontKey, chars) {
   if (!PYTHON) throw new Error('Set FONT_PYTHON to a Python that has fonttools and brotli');
   const work = mkdtempSync(join(tmpdir(), 'nsub-'));
   try {

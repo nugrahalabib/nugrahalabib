@@ -47,6 +47,8 @@ const md = [
   '',
   ...cardRows,
   '',
+  pic('activity', 'Behind the private repos: real numbers from GitHub for work in private company repositories, with contributions per month.'),
+  '',
   pic('principles', `${PRINCIPLES.title}. ${PRINCIPLES.items.map((i) => i.title).join('. ')}.`),
   '',
   pic('journey', `${JOURNEY.title} ${JOURNEY.lanes.map((l) => l.items.map((i) => i.label).join(', ')).join('; ')}.`),

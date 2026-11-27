@@ -38,6 +38,8 @@
   <a href="https://github.com/nugrahalabib/Website-Berseni.id"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-berseni-dark.svg"><img src="assets/card-berseni-light.svg" width="49%" alt="Berseni.id. Bilingual site and CMS for an Indonesian art community: painting classes, workshops, an artwork shop and a blog, all edited from one admin panel."></picture></a>
 </p>
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/activity-dark.svg"><img src="assets/activity-light.svg" width="100%" alt="Behind the private repos: real numbers from GitHub for work in private company repositories, with contributions per month."></picture>
+
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/principles-dark.svg"><img src="assets/principles-light.svg" width="100%" alt="How I build. Numbers come from code. Every quote is checked. People approve side effects. Isolation by default. It runs where the data lives."></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg"><img src="assets/journey-light.svg" width="100%" alt="What I do, and how I got here. Spead AI · Founder & Lead AI Engineer, AgentBuff · CEO, WIKA EPCC · IT Specialist, Caliana · Strategic Initiative Analyst; NgR Service · laptop & PC service, Maxis Studio · design & build, LAB.in Studio · 3D visualisation, 30+ clients, Mutiara27 · 100+ room boarding house, Gultik & Soto Masnug · 5.0 from 300+ reviews, D'Bestie Cafe · campus cafe; Zurnalis Architect, Airmas Asri, Waskita Karya · contracts & claims; TikTok @nugrahalabib · 130K+ followers, Shopee · official creator & affiliate; Diponegoro University · B.Arch, cum laude, Prasetiya Mulya · MM New Ventures Innovation."></picture>

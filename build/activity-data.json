@@ -1,0 +1,89 @@
+{
+  "updated": "2026-11-27",
+  "subtitle": "Most of my work lives in private company repositories. Real numbers from GitHub.",
+  "period": "2025-11-23 to 2026-11-27",
+  "stats": [
+    {
+      "value": "4,927",
+      "label": "contributions in",
+      "label2": "the last 12 months"
+    },
+    {
+      "value": "91%",
+      "label": "of them in private",
+      "label2": "repositories (4,461)"
+    },
+    {
+      "value": "194",
+      "label": "pull requests opened,",
+      "label2": "189 merged"
+    },
+    {
+      "value": "160",
+      "label": "active days, longest",
+      "label2": "streak 49 days"
+    }
+  ],
+  "months": [
+    {
+      "label": "Dec",
+      "total": 77
+    },
+    {
+      "label": "Jan",
+      "total": 40
+    },
+    {
+      "label": "Feb",
+      "total": 6
+    },
+    {
+      "label": "Mar",
+      "total": 0
+    },
+    {
+      "label": "Apr",
+      "total": 11
+    },
+    {
+      "label": "May",
+      "total": 36
+    },
+    {
+      "label": "Jun",
+      "total": 427
+    },
+    {
+      "label": "Jul",
+      "total": 483
+    },
+    {
+      "label": "Aug",
+      "total": 845
+    },
+    {
+      "label": "Sep",
+      "total": 493
+    },
+    {
+      "label": "Oct",
+      "total": 1332
+    },
+    {
+      "label": "Nov",
+      "total": 1177
+    }
+  ],
+  "products": [
+    "Spead AI",
+    "Spead AI Pro",
+    "AgentBuff",
+    "HC Platform",
+    "Q-NEXUS",
+    "DashPro",
+    "Kasir POS",
+    "Buff Your Money",
+    "KostCloud",
+    "Smart Home"
+  ]
+}
